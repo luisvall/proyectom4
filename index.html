@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCm4</title>
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+</head>
+<body>
+    <body onload="asignarEventos()">
+        <div class="wrap">
+            <div id="cIzquierda" class="contenedores">
+                <button id="elBotonIzquierda">push Izquierda</button>
+            </div>
+            <div id="cDerecha"  class="contenedores">
+                <button id="elBotonDerecha">push Derecha</button>
+            </div>
+        </div>
+    
+    <hr>
+    <hr>
+    <h2>Productos Disponibles</h2>
+    <form class="formulario">
+        <div id="labelProductos" class="losProductos">
+            <label for="txtLeche">Leche $1000</label>
+            <label for="txtPan">Pan de Molde $2000</label>
+            <label for="txtQueso">Queso $1200</label>
+            <label for="txtMermelada">Mermelada $890</label>
+            <label for="txtAzucar">Azucar $1300</label>
+        </div>
+        <div id="inputProductos" class="losProductos">
+            <input type="number" min="0" id="txtLeche">
+            <input type="number" min="0" id="txtPan">
+            <input type="number" min="0" id="txtQueso">
+            <input type="number" min="0" id="txtMermelada">
+            <input type="number" min="0" id="txtAzucar">
+            <input type="button" id="btnCalcular" value="Calcular">
+        </div>
+    </form>
+   <p>Valor Final a Pagar: $<span id="txtValorFinalAPagar">0</span> </p>    
+   <h3>Detalles de la compra: </h3>   
+   <p id="prfDetallesCompra"></p>
+        <script src="./assets/js/logica.js"></script>
+    </body>
+</body>
+</html>
